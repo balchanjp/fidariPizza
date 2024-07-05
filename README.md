@@ -120,3 +120,34 @@ The best way to learn Redwood is by going through the comprehensive [tutorial](h
 
 - Stay updated: read [Forum announcements](https://community.redwoodjs.com/c/announcements/5), follow us on [Twitter](https://twitter.com/redwoodjs), and subscribe to the [newsletter](https://redwoodjs.com/newsletter)
 - [Learn how to contribute](https://redwoodjs.com/docs/contributing)
+
+
+
+
+## Process Notes
+
+My first step to taking this project down was doing some system design, I don't really have time to build out what I would want,
+go over requirements in more detail, or discuss options with team members so its a bit rudimentary but it helps to get stuff out of
+my head and to be more easily referenced.
+
+There are 2 pictures of the initial design photos from my desk whiteboard in the designPhotos directory.
+
+After that I went and started reading up a bit more on RedwoodJS (I had only read a little bit during the design phase),
+If my goal were to actually build out a fully functioning app and everything along with it, I would have probably used
+SpringBoot/Java or Django/Python, but I figured I might as well learn something since this won't be able to be completed
+and isn't going into real production use. I also would definitely use a 3rd party auth instead of just sql simpleAuth and hash.
+
+After setting up redwood, the default auth pages, and generating a page for the pizza and checkout/cart pages I was just past 2 hours
+so I started writing this up. I didn't even get to customizing the pizza/checkout pages.
+
+Looking back I probably should have gone with something I was more familiar with, but I do like redwood and the documentation they have for it.
+
+I didn't get to showcase any of my abilities as a coder/programmer and I think that is something that is very difficult to do with a couple hour time limit,
+a lot my time was spent trying to make sure I understood the constraints and building out a design. I dont like to just randomly code away as that doesn't make sense
+in a vacuum.
+
+If I were to break this out into tasks for team-members, I would have a couple people working on the different api components and rudimentary links to the api calls the frontend would need.
+Id have someone actually designing the web pages and putting in the html and styling around the methods the backend people created(at the very least they'd be implementing the styling).
+Id have someone else working setting up the CI/CD and infrastructure so that the app would be able to be automated to deploy and test in multiple environments.
+
+
