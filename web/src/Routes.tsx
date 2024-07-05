@@ -9,9 +9,18 @@
 
 import { Router, Route } from '@redwoodjs/router'
 
+import { useAuth } from './auth'
+
 const Routes = () => {
   return (
-    <Router>
+    <Router useAuth={useAuth}>
+      <Route path="/login" page={LoginPage} name="login" />
+      <Route path="/signup" page={SignupPage} name="signup" />
+      <Route path="/forgot-password" page={ForgotPasswordPage} name="forgotPassword" />
+      <Route path="/reset-password" page={ResetPasswordPage} name="resetPassword" />
+      <Route path="/checkout" page={CheckoutPage} name="checkout" />
+      <Route path="/" page={PizzaPage} name="home" />
+      <Route path="/dashboard" page={DashboardPage} name="dashboard" />
       <Route notfound page={NotFoundPage} />
     </Router>
   )

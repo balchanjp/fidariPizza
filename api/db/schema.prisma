@@ -21,6 +21,10 @@ model User {
   email String  @unique
   Pizza Pizza[]
   Order Order[]
+  hashedPassword      String
+  salt                String
+  resetToken          String?
+  resetTokenExpiresAt DateTime?
 }
 
 model Topping {
